@@ -4,6 +4,9 @@ import Onboarding from './components/Onboarding';
 import Test from './components/Test';
 import Roles from './components/Roles';
 import SignUp from './components/SignUp';
+import LogIn from './components/LogIn';
+import OrgSignUp from './components/OrgSignUp';
+import HomeScreen from './components/HomeScreen';
 
 function App() {
   return (
@@ -12,6 +15,10 @@ function App() {
         <Route path="/" element={<Onboarding />} />
         <Route path="role" element={<Roles />} />
         <Route path="signup" element={<SignUp />} />
+        <Route path="login" element={<LogIn />} />
+        <Route path="orgsignup" element={<OrgSignUp />} />
+        <Route path="home" element={<HomeScreen />} />
+        <Route path="signup" element={<Test />} />
         <Route path="admin" element={<Test />} />
         <Route path="organizer" element={<Test />} />
         <Route path="participant" element={<Test />} />
