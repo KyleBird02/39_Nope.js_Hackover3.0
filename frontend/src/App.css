@@ -79,7 +79,7 @@
   position: absolute;
 
 } */
-.rsvp-img{
+.kyle-rsvp-img{
   position: relative;
   background-size: 150px 80px;
   width: 150px;
@@ -87,6 +87,7 @@
   top: 25px;
   left: 15px;
 }
+
 .text{
   position: absolute;
   font-family: 'Poppins';
@@ -115,14 +116,14 @@
   width: 35vh;
 }
 
-.button{
+.kyle-button{
   position: absolute;
   bottom: 7%;
   height: 65px;
   width: 70vw;
   border-radius: 20px;
   font-size: 25px;
-=======
+}
 .outline{
   background: none;
   border : solid 2px #dd0aec;
