@@ -50,8 +50,8 @@ const Admin = mongoose.model("Admin", AdminSchema);
 const Event = mongoose.model("Event", EventSchema);
 
 module.exports = {
-    Customer: Customer,
-    Organizer: Organizer,
-    Admin: Admin,
-    Event: Event,
+    Customer,
+    Organizer,
+    Admin,
+    Event,
 };
