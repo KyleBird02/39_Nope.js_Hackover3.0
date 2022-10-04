@@ -5,9 +5,9 @@ export default function Onboarding() {
         <div className='rsvp-img'></div>
         <div className='graphic-1'></div>
         <div className='welcome-text'>
-            Welcome to <br/>
-            <strong>RSVP</strong><br/>
-            Your all in one event hub
+            <p className='text kyle-extrabold'>Welcome to</p> <br/>
+            <p className='text kyle-medium'>RSVP</p><br/>
+            <p className='text kyle-regular'>Your all in one event Hub!</p>
         </div>
         <button className='button'>
         Get Started

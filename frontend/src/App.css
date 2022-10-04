@@ -21,9 +21,9 @@
 
 .rsvp-img{
   background: url('./assets/logo.png');
-  background-size: 100px 50px;
-  width: 100px;
-  height: 50px;
+  background-size: 140px 70px;
+  width: 140px;
+  height: 70px;
   margin-left: 10px;
 }
 
@@ -39,6 +39,7 @@
   color: #E2E2E8;
   font-size: 25px;
   margin-left: 10px;
+  position: relative;
 }
 
 .button{
@@ -53,4 +54,63 @@
   border-radius: 30.0056px;
   border : none;
   padding: 10px 15px;
+}
+
+/*Kyle CSS*/
+/* .kyle-img{
+  margin-left: 30px;
+  margin-top: 25px;
+}
+
+.kyle-extrabold{
+  font-family: 'Poppins';
+  font-weight: 800;
+  font-size: 0px;
+  color: #E2E2E8;
+  position: absolute;
+
+} */
+.rsvp-img{
+  position: relative;
+  background-size: 150px 80px;
+  width: 150px;
+  height: 80px;
+  top: 25px;
+  left: 15px;
+}
+.text{
+  position: absolute;
+  font-family: 'Poppins';
+}
+
+.kyle-extrabold{
+  font-weight: 800;
+  font-size: 35px;
+  bottom: 60%;
+  left: 10%;
+}
+
+.kyle-medium{
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 80px;
+  bottom: -45%;
+  left: 10%;
+}
+
+.kyle-regular{
+  font-weight: 600;
+  font-size: 20px;
+  bottom: -75%;
+  left: 10%;
+  width: 35vh;
+}
+
+.button{
+  position: absolute;
+  bottom: 7%;
+  height: 65px;
+  width: 70vw;
+  border-radius: 20px;
+  font-size: 25px;
 }
