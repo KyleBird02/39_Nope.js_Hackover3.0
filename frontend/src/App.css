@@ -11,6 +11,10 @@
   color: #E2E2E8;
 }
 
+.card{
+  align-self: center;
+}
+
 .rsvp-logo{
   font-weight: 600;
   font-size: 50px;

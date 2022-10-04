@@ -1,33 +1,54 @@
 import React, { useState } from 'react'
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
+import { useAuth } from '../context/UserContext';
 
 
 export default function SignUp() {
-    const [user,setUser] = useState({
+    const [userData,setUserData] = useState({
         email : "",
         password : "",
     })
+    const {setUser,user} = useAuth();
     const navigate = useNavigate();
 
     function submit(){
-        if(user.email === "" || user.password === "")
+
+        if(userData.email === "" || userData.password === "")
         {
             alert("Please enter all required fields! ")
         }
         else
         {
+            // if(user.role === 'admin')
+            // {
+            //     navigate("/admin");
+            // }
+            // else if(user.role === 'customer')
+            // {
+            //     navigate("/participant");
+            // }
+            // else
+            // {
+            //     navigate("/organizer");
+            // }
             axios({
                 method : 'post',
-                url : 'https://glenn-mendonca-39-nope-js-hackover3-0-rx9j56g76qghrjj-3000.githubpreview.dev/auth/customer',
+                url : 'http://localhost:3000/auth/organizer',
                 headers : {"Access-Control-Allow-Origin" : "*"},
-                params : {email : user.email, password : user.password}
+                email : userData.email,
+                password : userData.password
             })
             .then((res)=>
             {
                 if(res.data === "Customer signed in" || res.data === "Customer signed up")
                 {
+                    setUser(userData.email);
                     navigate("/admin");
+                }
+                else
+                {
+                    alert("error")
                 }
             });
         }
@@ -37,8 +58,8 @@ export default function SignUp() {
     <div className='screen'>
         <div className='rsvp-img'></div>
         <div className='signup-text'>Enter Your<br/> Details</div>
-        <input type='email' placeholder='Enter Email' className='signup-input' value={user.email} onChange={(e)=>setUser({...user,email : e.target.value})}/>
-        <input type='password' placeholder='Password' className='signup-input' value={user.password} onChange={(e)=>setUser({...user,password : e.target.value})}/>
+        <input type='email' placeholder='Enter Email' className='signup-input' value={userData.email} onChange={(e)=>setUserData({...userData,email : e.target.value})}/>
+        <input type='password' placeholder='Password' className='signup-input' value={userData.password} onChange={(e)=>setUserData({...userData,password : e.target.value})}/>
         <div className='signup-group'>
         <button className='button signup-button' onClick={submit}>
         Sign Up
