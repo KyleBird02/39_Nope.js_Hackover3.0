@@ -1,0 +1,57 @@
+.screen{
+  width: 100vw;
+  height: 100vh;
+  background: url('./assets/bg.png');
+  background-size: 100vw 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  font-family: 'Poppins';
+}
+
+.rsvp-logo{
+  font-weight: 600;
+  font-size: 50px;
+  background: linear-gradient(25deg, #4680be 0%, #dd0aec 50.37%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-left: 10px;
+}
+
+.rsvp-img{
+  background: url('./assets/logo.png');
+  background-size: 100px 50px;
+  width: 100px;
+  height: 50px;
+  margin-left: 10px;
+}
+
+.graphic-1{
+  align-self: center;
+  background: url('./assets/graphic1.png');
+  background-size: 350px 350px;
+  width: 350px;
+  height: 350px;
+}
+
+.welcome-text{
+  color: #E2E2E8;
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+.button{
+  margin-top: 25px;
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 20px;
+  color: #E2E2E8;
+  width: 70vw;
+  margin-left: -10px;
+  align-self: center;
+  background: linear-gradient(90deg, rgba(67, 157, 254, 0.75) 0%, rgba(246, 135, 255, 0.75) 82.37%);
+  border-radius: 30.0056px;
+  border : none;
+  padding: 10px 15px;
+}
