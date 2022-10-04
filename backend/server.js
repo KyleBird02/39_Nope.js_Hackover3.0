@@ -16,7 +16,7 @@ app.use(cors(corsOptions));
 app.use(express.json());
 
 mongoose.Promise = global.Promise;
-mongoose.connect(process.env.MONGO_URL, (err) => {
+mongoose.connect(process.env.MONGO_URL,{ useNewUrlParser: true }, (err) => {
     console.log("Conected to DB");
 });
 
