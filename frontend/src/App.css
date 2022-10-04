@@ -84,3 +84,36 @@
   margin-top: 15px;
   align-self: center;
 }
+
+.signup-input{
+  border-radius: 30px;
+  align-self: center;
+  padding: 15px 20px;
+  width: 75vw;
+  margin-bottom: 40px;
+  border: none;
+  font-size: 20px;
+}
+
+.signup-text{
+  margin-left: 40px;
+  font-weight: 600;
+  font-size: 35px;
+  margin: 40px 40px;
+  line-height: 35px;
+}
+
+.signup-button{
+  margin-bottom: 40px;
+}
+
+.signup-group{
+  align-self: center;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 50px;
+}
+
+.signup-input:focus{
+  outline-color: #dd0aec;
+}
