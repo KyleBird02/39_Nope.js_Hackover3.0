@@ -39,7 +39,7 @@ router.post("/customer", async (req, res) => {
         function (err, foundCustomer) {
             if (foundCustomer) {
                 if (foundCustomer.password === newCustomer.password) {
-                    res.send("Customer signed up");
+                    res.send("Customer signed in");
                     // res.redirect("http://127.0.0.1:8080/");
                 } else {
                     res.send("Email already exists !");

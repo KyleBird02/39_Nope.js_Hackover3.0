@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Manrope");
 .screen{
   width: 100vw;
   height: 100vh;
@@ -7,6 +8,7 @@
   flex-direction: column;
   overflow-x: hidden;
   font-family: 'Poppins';
+  color: #E2E2E8;
 }
 
 .rsvp-logo{
@@ -21,9 +23,9 @@
 
 .rsvp-img{
   background: url('./assets/logo.png');
-  background-size: 100px 50px;
-  width: 100px;
-  height: 50px;
+  background-size: 140px 70px;
+  width: 140px;
+  height: 70px;
   margin-left: 10px;
 }
 
@@ -35,22 +37,183 @@
   height: 350px;
 }
 
+.graphic-2{
+  align-self: center;
+  background: url('./assets/graphic2.png');
+  background-size: 350px 350px;
+  width: 350px;
+  height: 350px;
+}
+
 .welcome-text{
   color: #E2E2E8;
   font-size: 25px;
   margin-left: 10px;
+  position: relative;
 }
 
 .button{
   margin-top: 25px;
-  font-family: 'Poppins';
-  font-weight: 600;
-  font-size: 20px;
-  color: #E2E2E8;
+  height: 70px;
   width: 70vw;
+  border-radius: 20px;
+  font-family: 'Manrope';
+  font-weight: 600;
+  font-size: 22px;
+  color: white;
+  /* width: 70vw; */
   align-self: center;
   background: linear-gradient(90deg, rgba(67, 157, 254, 0.75) 0%, rgba(246, 135, 255, 0.75) 82.37%);
-  border-radius: 30.0056px;
+  /* border-radius: 30.0056px; */
   border : none;
   padding: 10px 15px;
+}
+
+/*Kyle CSS*/
+/* .kyle-img{
+  margin-left: 30px;
+  margin-top: 25px;
+}
+
+.kyle-extrabold{
+  font-family: 'Poppins';
+  font-weight: 800;
+  font-size: 0px;
+  color: #E2E2E8;
+  position: absolute;
+
+} */
+.kyle-rsvp-img{
+  position: relative;
+  background-size: 150px 80px;
+  width: 150px;
+  height: 80px;
+  top: 25px;
+  left: 15px;
+}
+.text{
+  position: absolute;
+  font-family: 'Poppins';
+}
+
+.kyle-extrabold{
+  font-weight: 800;
+  font-size: 35px;
+  bottom: 60%;
+  left: 10%;
+}
+
+.kyle-medium{
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 80px;
+  bottom: -45%;
+  left: 10%;
+}
+
+.kyle-regular{
+  font-weight: 600;
+  font-size: 20px;
+  bottom: -75%;
+  left: 10%;
+  width: 35vh;
+}
+
+.kyle-button{
+  position: absolute;
+  bottom: 7%;
+  height: 65px;
+  width: 70vw;
+  border-radius: 20px;
+  font-size: 25px;
+}
+
+.outline{
+  background: none;
+  border : solid 2px #dd0aec;
+}
+
+.roles-text
+{
+  color: #E2E2E8;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.blue-text{
+  color: #439DFE;
+}
+
+.nav-to-login{
+  margin-top: 15px;
+  align-self: center;
+}
+
+.signup-input{
+  border-radius: 30px;
+  align-self: center;
+  padding: 15px 20px;
+  width: 75vw;
+  margin-bottom: 40px;
+  border: none;
+  font-size: 20px;
+}
+
+.signup-text{
+  margin-left: 40px;
+  font-weight: 600;
+  font-size: 35px;
+  margin: 40px 40px;
+  line-height: 35px;
+}
+
+.signup-button{
+  margin-bottom: 40px;
+}
+
+.signup-group{
+  align-self: center;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 50px;
+}
+
+.signup-input:focus{
+  outline-color: #dd0aec;
+}
+
+/*Kyle back at it*/
+.signup-input{
+  background-color: transparent;
+  border: 1px solid #403E3E;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  font-family: 'Manrope';
+}
+
+.signup-input:focus{
+  border:1px solid #F687FF;
+  outline: none;
+}
+
+.signup-text{
+  font-family: 'Manrope';
+}
+
+
+.location-text{
+  position: absolute;
+  top: 9%;
+  left: 4%;
+  color: #403E3E;
+}
+
+.title{
+  font-family: 'Manrope';
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 44px;
+  position: absolute;
+  left: 4%;
 }
