@@ -7,6 +7,7 @@
   flex-direction: column;
   overflow-x: hidden;
   font-family: 'Poppins';
+  color: #E2E2E8;
 }
 
 .rsvp-logo{
@@ -30,6 +31,14 @@
 .graphic-1{
   align-self: center;
   background: url('./assets/graphic1.png');
+  background-size: 350px 350px;
+  width: 350px;
+  height: 350px;
+}
+
+.graphic-2{
+  align-self: center;
+  background: url('./assets/graphic2.png');
   background-size: 350px 350px;
   width: 350px;
   height: 350px;
@@ -113,4 +122,57 @@
   width: 70vw;
   border-radius: 20px;
   font-size: 25px;
+=======
+.outline{
+  background: none;
+  border : solid 2px #dd0aec;
+}
+
+.roles-text
+{
+  color: #E2E2E8;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.blue-text{
+  color: #439DFE;
+}
+
+.nav-to-login{
+  margin-top: 15px;
+  align-self: center;
+}
+
+.signup-input{
+  border-radius: 30px;
+  align-self: center;
+  padding: 15px 20px;
+  width: 75vw;
+  margin-bottom: 40px;
+  border: none;
+  font-size: 20px;
+}
+
+.signup-text{
+  margin-left: 40px;
+  font-weight: 600;
+  font-size: 35px;
+  margin: 40px 40px;
+  line-height: 35px;
+}
+
+.signup-button{
+  margin-bottom: 40px;
+}
+
+.signup-group{
+  align-self: center;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 50px;
+}
+
+.signup-input:focus{
+  outline-color: #dd0aec;
 }
