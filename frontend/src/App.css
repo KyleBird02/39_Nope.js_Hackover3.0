@@ -25,6 +25,10 @@
   border-radius: 10px;
 }
 
+.glow{
+  border: solid 1px #dd0aec;
+}
+
 .create-event-text:hover{
   text-decoration: underline;
   text-decoration-color: #dd0aec;
