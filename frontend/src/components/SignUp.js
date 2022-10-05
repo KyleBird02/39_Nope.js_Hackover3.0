@@ -22,7 +22,7 @@ export default function SignUp() {
         {
             axios({
                 method : 'post',
-                url : 'http://localhost:5000/auth/organizer',
+                url : 'http://localhost:3000/auth/organizer',
                 headers : {"Access-Control-Allow-Origin" : "*"},
                 params : {email : userData.email,password : userData.password}
             })

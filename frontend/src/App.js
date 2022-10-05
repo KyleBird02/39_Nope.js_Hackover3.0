@@ -11,6 +11,7 @@ import { UserProvider } from './context/UserContext';
 import Events from './components/Events';
 import OrgDashboard from './components/OrgDashboard';
 import CreateEvent from './components/CreateEvent';
+import Verify from './components/Verify';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="organizer" element={<OrgDashboard />} />
           <Route path="participant" element={<Events />} />
           <Route path="create" element={<CreateEvent />} />
+          <Route path="verify" element={<Verify />} />
         </Routes>
       </div>
     </UserProvider>
