@@ -19,9 +19,24 @@
 
 .points{
   align-self: center;
+  list-style: none;
+  padding: 10px;
+  background-color: #242323;
+  border-radius: 10px;
 }
 
 .create-event-text:hover{
+  text-decoration: underline;
+  text-decoration-color: #dd0aec;
+}
+
+.create-event-text{
+  color: #dd0aec;
+}
+
+
+
+.my-event-text{
   text-decoration: underline;
   text-decoration-color: #dd0aec;
 }
