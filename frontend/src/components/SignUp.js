@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import axios from 'axios';
+//import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 import { useAuth } from '../context/UserContext';
 
@@ -20,37 +20,44 @@ export default function SignUp() {
         }
         else
         {
-            // if(user.role === 'admin')
-            // {
-            //     navigate("/admin");
-            // }
-            // else if(user.role === 'customer')
-            // {
-            //     navigate("/participant");
-            // }
-            // else
-            // {
-            //     navigate("/organizer");
-            // }
-            axios({
-                method : 'post',
-                url : 'http://localhost:3000/auth/organizer',
-                headers : {"Access-Control-Allow-Origin" : "*"},
-                email : userData.email,
-                password : userData.password
-            })
-            .then((res)=>
+            setUser(userData.email);
+            if(user.role === 'admin')
             {
-                if(res.data === "Customer signed in" || res.data === "Customer signed up")
-                {
-                    setUser(userData.email);
-                    navigate("/admin");
-                }
-                else
-                {
-                    alert("error")
-                }
-            });
+                navigate("/admin");
+            }
+            else if(user.role === 'customer')
+            {
+                navigate("/participant");
+            }
+            else
+            {
+                navigate("/organizer");
+            }
+            // axios({
+            //     method : 'post',
+            //     url : 'http://localhost:3000/auth/organizer',
+            //     headers : {"Access-Control-Allow-Origin" : "*"},
+            //     params : {email : userData.email,password : userData.password}
+            // })
+            // fetch('http://localhost:3000/auth/organizer', 
+            // {method: 'POST',
+            // headers: {
+            //     'Accept': 'application/json, text/plain, */*',
+            //     'Content-Type': 'application/json'
+            // },
+            // body: JSON.stringify({"email" : userData.email , "password" : userData.password})})
+            // .then((res)=>
+            // {
+            //     if(res.data === "Customer signed in" || res.data === "Customer signed up")
+            //     {
+            //         setUser(userData.email);
+            //         navigate("/admin");
+            //     }
+            //     else
+            //     {
+            //         alert("error")
+            //     }
+            // });
         }
     }
 

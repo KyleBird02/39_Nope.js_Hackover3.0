@@ -13,6 +13,27 @@
 
 .card{
   align-self: center;
+  position: relative;
+}
+
+.card img{
+  opacity: 60%;
+  width: 80vw;
+  border-radius: 36px;
+}
+
+.absolute{
+  position: absolute;
+}
+
+.t1{
+  bottom: 30px;
+  left: 10px;
+}
+
+.t2{
+  bottom: 10px;
+  left: 10px;
 }
 
 .rsvp-logo{
