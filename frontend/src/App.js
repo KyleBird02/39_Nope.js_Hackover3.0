@@ -9,6 +9,8 @@ import OrgSignUp from './components/OrgSignUp';
 import HomeScreen from './components/HomeScreen';
 import { UserProvider } from './context/UserContext';
 import Events from './components/Events';
+import OrgDashboard from './components/OrgDashboard';
+import CreateEvent from './components/CreateEvent';
 
 function App() {
   return (
@@ -21,10 +23,10 @@ function App() {
           <Route path="login" element={<LogIn />} />
           <Route path="orgsignup" element={<OrgSignUp />} />
           <Route path="home" element={<HomeScreen />} />
-          <Route path="signup" element={<Test />} />
           <Route path="admin" element={<Test />} />
-          <Route path="organizer" element={<Test />} />
+          <Route path="organizer" element={<OrgDashboard />} />
           <Route path="participant" element={<Events />} />
+          <Route path="create" element={<CreateEvent />} />
         </Routes>
       </div>
     </UserProvider>

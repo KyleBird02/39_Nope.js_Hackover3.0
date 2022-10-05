@@ -11,6 +11,22 @@
   color: #E2E2E8;
 }
 
+.self-center{
+  align-self: center;
+  margin-top: 25px;
+  padding: 5px 10px;
+}
+
+.create-event-text:hover{
+  text-decoration: underline;
+  text-decoration-color: #dd0aec;
+}
+
+.decorate{
+  border-radius: 30px;
+  border : solid 2px #dd0aec;
+}
+
 .card{
   align-self: center;
   position: relative;
