@@ -11,6 +11,10 @@
   color: #E2E2E8;
 }
 
+.margin-b{
+  margin-bottom: 20px;
+}
+
 .self-center{
   align-self: center;
   margin-top: 25px;
@@ -142,6 +146,16 @@
   /* border-radius: 30.0056px; */
   border : none;
   padding: 10px 15px;
+}
+
+.button-event{
+  margin-top: 25px;
+  background: linear-gradient(90deg, rgba(67, 157, 254, 0.75) 0%, rgba(246, 135, 255, 0.75) 82.37%);
+  max-width: fit-content;
+  padding: 10px 15px;
+  border-radius: 16px;
+  align-self: center;
+  font-size: 20px;
 }
 
 .round{

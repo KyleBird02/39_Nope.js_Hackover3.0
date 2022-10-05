@@ -1,7 +1,6 @@
 import './App.css';
 import { Routes, Route} from "react-router-dom";
 import Onboarding from './components/Onboarding';
-import Test from './components/Test';
 import Roles from './components/Roles';
 import SignUp from './components/SignUp';
 import LogIn from './components/LogIn';
