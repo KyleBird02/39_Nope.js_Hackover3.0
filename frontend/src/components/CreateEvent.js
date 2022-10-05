@@ -42,21 +42,21 @@ export default function CreateEvent({data}) {
 
   return (
     <div className='screen'>
-    <div className='self-center'>Create Event</div>
-    <select className='event-input select' onChange={(e)=>setEvent({...event,type : e.target.value})}>
+    <div className='signup-text'>Create Event</div>
+    <select className='signup-input drop' onChange={(e)=>setEvent({...event,type : e.target.value})}>
         <option value="hackathon">Hackathon</option>
         <option value="concert">Concert</option>
         <option value="standup">Comedy</option>
         <option value="other">Other</option>
     </select>
-    <input type='text' className='event-input' placeholder='Name of Event' value={event.eventname}
+    <input type='text' className='signup-input create' placeholder='Name of Event' value={event.eventname}
     onChange={(e)=>setEvent({...event,eventname : e.target.value})}></input>
-    <input type='Date' className='event-input' ></input>
-    <textarea className='event-input' rows={5} placeholder='Description'
+    <input type='Date' className='signup-input create' ></input>
+    <textarea className='signup-input create' rows={5} placeholder='Description'
     onChange={(e)=>setEvent({...event,description : e.target.value})}></textarea>
-    <input type='text' className='event-input' placeholder='Location' value={event.location}
+    <input type='text' className='signup-input create' placeholder='Location' value={event.location}
     onChange={(e)=>setEvent({...event,location : e.target.value})}></input>
-    <input type='Number' className='event-input' placeholder='Ticket Price' value={event.paymentAmount}
+    <input type='Number' className='signup-input create' placeholder='Ticket Price' value={event.paymentAmount}
     onChange={(e)=>setEvent({...event, paymentAmount : e.target.value})}></input>   
     <button className='button' onClick={submit}>Submit</button>
     </div>

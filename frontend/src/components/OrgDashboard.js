@@ -23,7 +23,7 @@ export default function OrgDashboard() {
     <div className='self-center decorate'>
         {user.role} : {user.email}
     </div>
-    <div className='self-center create-event-text' onClick={()=>navigate('/create')}>Create Event</div>
+    <div className='self-center button signup-button verify-button' onClick={()=>navigate('/create')}>Create Event</div>
     <div className='self-center my-event-text'>My Events</div>
     {
         events.map((e)=>
