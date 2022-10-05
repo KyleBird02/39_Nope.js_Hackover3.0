@@ -65,4 +65,18 @@ router.post("/", async (req, res) => {
     );
 });
 
+router.get("/", async (req, res) => {
+    const params = req.query;
+    Event.find({organizer : params.organizer},function(err, data) {
+        if(err)
+        {
+            res.send('fail');
+        }
+        else
+        {
+            res.send(data);
+        }
+    })
+})
+
 module.exports = router;
