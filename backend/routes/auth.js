@@ -28,8 +28,8 @@ const Admin = mongoose.model("Admin", AdminSchema);
 
 // SignUp/Login Customer
 router.post("/customer", async (req, res) => {
-    const email = req.query.email;
-    const password = req.query.password;
+    const email = req.body.email;
+    const password = req.body.password;
     const newCustomer = new Customer({
         email: email,
         password: password,
@@ -50,7 +50,7 @@ router.post("/customer", async (req, res) => {
                         res.send("Customer signed up");
                         // res.redirect("http://127.0.0.1:8080/");
                     } else {
-                        res.send(err);
+                        res.send("Some error occured !");
                         return;
                     }
                 });
@@ -123,5 +123,3 @@ router.post("/organizer", async (req, res) => {
 });
 
 module.exports = router;
-
-// https://glenn-mendonca-39-nope-js-hackover3-0-rx9j56g76qghrjj-3000.githubpreview.dev/auth
