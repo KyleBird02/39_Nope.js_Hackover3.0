@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 
 
-export default function CreateEvent() {
+export default function CreateEvent({data}) {
   const navigate = useNavigate();
   const [event,setEvent] = useState({
     "type": "",
@@ -16,7 +16,8 @@ export default function CreateEvent() {
     "participants": 0,
     "codeOfConduct": ['hehe','lol'],
     "faqs": [],
-    "sponsors": []
+    "sponsors": [],
+    ...data
   })
 
   function submit(){
