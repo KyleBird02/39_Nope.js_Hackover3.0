@@ -12,6 +12,7 @@ import Events from './components/Events';
 import OrgDashboard from './components/OrgDashboard';
 import CreateEvent from './components/CreateEvent';
 import Verify from './components/Verify';
+import AdminPortal from './components/AdminPortal';
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
           <Route path="login" element={<LogIn />} />
           <Route path="orgsignup" element={<OrgSignUp />} />
           <Route path="home" element={<HomeScreen />} />
-          <Route path="admin" element={<Test />} />
+          <Route path="admin" element={<AdminPortal />} />
           <Route path="organizer" element={<OrgDashboard />} />
           <Route path="participant" element={<Events />} />
           <Route path="create" element={<CreateEvent />} />
