@@ -17,6 +17,10 @@
   padding: 5px 10px;
 }
 
+.points{
+  align-self: center;
+}
+
 .create-event-text:hover{
   text-decoration: underline;
   text-decoration-color: #dd0aec;
@@ -110,6 +114,11 @@
   padding: 10px 15px;
 }
 
+.round{
+  border-radius: 10px;
+  padding: 10px
+}
+
 /*Kyle CSS*/
 /* .kyle-img{
   margin-left: 30px;
@@ -201,6 +210,16 @@
   font-size: 20px;
 }
 
+.event-input{
+  border-radius: 30px;
+  align-self: center;
+  padding: 10px 15px;
+  width: 75vw;
+  border: none;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
 .signup-text{
   margin-left: 40px;
   font-weight: 600;
@@ -220,7 +239,11 @@
   margin-bottom: 50px;
 }
 
-.signup-input:focus{
+.select{
+  width: 84vw;
+}
+
+.signup-input:focus, .event-input:focus{
   outline-color: #dd0aec;
 }
 
