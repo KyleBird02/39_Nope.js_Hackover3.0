@@ -44,16 +44,27 @@
 
 .absolute{
   position: absolute;
+  font-family: 'Manrope';
 }
 
 .t1{
-  bottom: 30px;
-  left: 10px;
+  bottom: 50px;
+  left: 20px;
+  font-family: 'Manrope';
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .t2{
-  bottom: 10px;
-  left: 10px;
+  bottom: 25px;
+  left: 20px;
+  font-family: 'Manrope';
+  font-weight: 500;
+  font-size: 20px;
 }
 
 .rsvp-logo{
@@ -272,6 +283,110 @@
   top: 9%;
   left: 4%;
   color: #403E3E;
+}
+
+.explore-body{
+  position: relative;
+  top: 5%;
+  left: 10%;
+}
+
+.user-location{
+  margin-left: 3%;
+  color: #3C3744;
+  font-size: 20px;
+  position: relative;
+  top: -3%
+}
+
+.explore-text{
+  font-family: 'Manrope';
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 44px;
+  position: relative;
+  left: 4%;
+  line-height: 44px;
+}
+
+.searchbar-container{
+  margin-top: 10px;
+}
+
+/* .searchIcon{
+  position: relative;
+} */
+
+.searchbar{
+  position: relative;
+  top:10%;
+  left: 4%;
+  width:65vw;
+  height: 8vh;
+  background-color: #292929;
+  border-radius: 10px;
+  border: 1px solid #403E3E;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  font-family: 'Manrope';
+  padding: 0px 50px;
+}
+
+.searchbar:focus{
+  border:1px solid #F687FF;
+  outline: none;
+}
+
+.chips-container{
+  display: flex;
+  width: 100vw;
+  height: 80px;
+  margin-top: 20px;
+}
+
+.chip{
+  display: flex;
+  border-radius: 13px;
+  margin: 9px;
+  margin-left: 18px;
+  width: 64.55px;
+  height: 67.76px;
+  background-color: #292929;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons{
+  justify-content: center;
+  height: 70%;  
+}
+
+.desc-container{
+  display: flex;
+  width: 100vw;
+}
+
+.chip-desc{
+  display: flex;
+  padding-left: 24px
+}
+
+.movies{
+  padding-right: 15px;
+  padding-left: -5px;
+}
+
+.standup{
+  padding-left: 30px;
+}
+
+.other{
+  padding-left: 35px;
+}
+
+.upcoming{
+  top: 5%;
 }
 
 .title{
