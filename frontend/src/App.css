@@ -516,3 +516,25 @@
   color: red;
   border: 3px solid red;
 }
+
+.verify-button{
+  width: 50vw;
+  height: 8vh;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Manrope';
+  margin-top: 10px;
+}
+
+.create{
+  min-width: 80vw;
+  min-height: 30px;
+}
+
+option{
+  background-color: #292929;
+}
+
+.drop{
+  width: 90vw;
+}
