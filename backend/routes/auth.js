@@ -123,5 +123,3 @@ router.post("/organizer", async (req, res) => {
 });
 
 module.exports = router;
-
-// https://glenn-mendonca-39-nope-js-hackover3-0-rx9j56g76qghrjj-3000.githubpreview.dev/auth
