@@ -6,7 +6,7 @@ const MongoClient = require("mongodb").MongoClient;
 const GridFSBucket = require("mongodb").GridFSBucket;
 const url = process.env.MONGO_URL;
 const baseUrl = "http://localhost:8080/files/";
-const mongoClient = new MongoClient(url);
+const mongoClient = new MongoClient("mongodb+srv://admin:3eMadFtDKOxTJrhk@hackovercluster0.dvcjbob.mongodb.net/?retryWrites=true&w=majority");
 
 const uploadFiles = async (req, res) => {
     try {

@@ -11,6 +11,47 @@
   color: #E2E2E8;
 }
 
+.self-center{
+  align-self: center;
+  margin-top: 25px;
+  padding: 5px 10px;
+}
+
+.create-event-text:hover{
+  text-decoration: underline;
+  text-decoration-color: #dd0aec;
+}
+
+.decorate{
+  border-radius: 30px;
+  border : solid 2px #dd0aec;
+}
+
+.card{
+  align-self: center;
+  position: relative;
+}
+
+.card img{
+  opacity: 60%;
+  width: 80vw;
+  border-radius: 36px;
+}
+
+.absolute{
+  position: absolute;
+}
+
+.t1{
+  bottom: 30px;
+  left: 10px;
+}
+
+.t2{
+  bottom: 10px;
+  left: 10px;
+}
+
 .rsvp-logo{
   font-weight: 600;
   font-size: 50px;
@@ -91,6 +132,7 @@
   top: 25px;
   left: 15px;
 }
+
 .text{
   position: absolute;
   font-family: 'Poppins';
@@ -216,4 +258,84 @@
   line-height: 44px;
   position: absolute;
   left: 4%;
+}
+
+.back-button{
+  position: absolute;
+  background-color: black;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  width: 56px;
+  height: 40px;
+  top: 4%;
+  left: 5%;
+}
+
+.arrow{
+  position: absolute;
+  top: 32%;
+  left: 30%;
+}
+
+.desc-body{
+  height: 65vh;
+  background-color: transparent;
+  margin-top: 0vh;
+  margin-left: 20px;
+}
+
+.category{
+  font-family: 'Manrope';
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  opacity: 50%;
+}
+
+.name{
+  font-family: 'Manrope';
+  font-weight: 400;
+  font-size: 30px;
+  margin-top: 0;
+}
+
+.footer{
+  height: 18vh;
+  background-color: #242323;
+  border-radius: 3%;
+}
+
+.footer-text{
+  font-family: 'Manrope';
+}
+
+.price-label{
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.5);
+  padding-top: 5px;
+  padding-left: 25px;
+}
+
+.price-amt{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  padding-left: 25px;
+  padding-bottom: 10px;
+}
+
+.footer-button{
+  position: absolute;
+  bottom: 2%;
+  left: 45%;
+  width: 50vw;
+  border-radius: 20px;
+  font-family: 'Manrope';
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+  background: linear-gradient(90deg, rgba(67, 157, 254, 0.75) 0%, rgba(246, 135, 255, 0.75) 82.37%);
 }
