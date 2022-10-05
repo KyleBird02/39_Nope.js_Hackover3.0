@@ -58,6 +58,6 @@ export default function CreateEvent({data}) {
     onChange={(e)=>setEvent({...event,location : e.target.value})}></input>
     <input type='Number' className='signup-input create' placeholder='Ticket Price' value={event.paymentAmount}
     onChange={(e)=>setEvent({...event, paymentAmount : e.target.value})}></input>   
-    <button className='button' onClick={submit}>Submit</button>
+    <button className='button margin-b' onClick={submit}>Submit</button>
     </div>
 )}
